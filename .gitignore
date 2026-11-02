@@ -1,0 +1,5 @@
+.runtime/
+__pycache__/
+config/
+freej2me_system/
+rms/
