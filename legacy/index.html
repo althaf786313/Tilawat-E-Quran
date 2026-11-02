@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f4f0e4" />
+  <title>Worm Flight — a little sky adventure</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header"><a class="brand" href="#"><span class="brand-icon">✿</span> LITTLE SKY GAMES</a><span class="header-right"><span class="tiny-star">✦</span> A LITTLE GAME, A LOT OF SKY</span></header>
+    <main>
+      <section class="intro"><div><div class="eyebrow"><span>✦</span> READY, SET, SOAR!</div><h1>Worm <em>Flight</em><span class="title-spark">✳</span></h1><p>A little worm with a big dream. How far can you fly?</p></div><div class="intro-note"><span class="note-star">✳</span><span>MADE FOR<br><b>BIG ADVENTURES</b></span></div></section>
+      <div class="layout">
+        <section class="game-card" aria-label="Worm Flight game">
+          <div class="game-top"><div><span class="live-dot"></span><span id="status">READY FOR TAKEOFF</span></div><div class="game-top-right"><span>BEST FLIGHT</span><strong id="best">0 m</strong></div></div>
+          <div class="canvas-wrap"><canvas id="game" width="1000" height="570" aria-label="A cannon launches a pink worm through the sky"></canvas><div class="canvas-hint" id="hint"><span>✦</span> YOUR ADVENTURE STARTS HERE</div><div class="result" id="result" hidden><div class="result-icon">✦</div><small>WHAT A FLIGHT!</small><h2 id="result-title">Nice flying!</h2><p>Your little worm traveled</p><div class="result-distance" id="result-distance">0 m</div><div class="result-detail" id="result-detail"></div><button id="again" class="again">Fly again <span>↗</span></button></div></div>
+          <div class="game-bottom"><div class="flight-stat"><span class="stat-icon">↗</span><div><small>DISTANCE</small><strong id="distance">0 <span>m</span></strong></div></div><div class="bottom-divider"></div><div class="flight-stat"><span class="stat-icon yellow">✦</span><div><small>BEST DISTANCE</small><strong id="bottom-best">0 <span>m</span></strong></div></div><div class="bottom-label">A LITTLE FURTHER EVERY TIME <span>♡</span></div></div>
+        </section>
+        <aside>
+          <div class="control-card"><div class="card-heading"><span class="step-badge">01</span><div><div class="card-kicker">LET'S GET YOU FLYING</div><h2>Launch controls</h2></div></div><div class="control-sep"></div><div class="slider-heading"><div><strong>Aim your cannon</strong><p>Pick the perfect angle</p></div><span class="angle-value" id="angle-value">45°</span></div><input id="angle" aria-label="Cannon angle" type="range" min="20" max="75" value="45"><div class="range-labels"><span>LOW &amp; FAR</span><span>HIGH &amp; MIGHTY</span></div><button id="launch" class="launch">Launch worm <span>↗</span></button><p class="control-tip"><span>✦</span> Aim, launch, and enjoy the ride!</p></div>
+          <div class="how-card"><div class="card-heading"><span class="step-badge peach">02</span><div><div class="card-kicker">A FEW THINGS TO KNOW</div><h2>Friends &amp; foes</h2></div></div><div class="legend"><div class="legend-item"><div class="legend-icon eagle-icon">🦅</div><div><strong>Friendly eagles</strong><p>They'll carry you further!</p></div><span class="legend-plus">+</span></div><div class="legend-item"><div class="legend-icon storm-icon">☁</div><div><strong>Stormy clouds</strong><p>Watch out for lightning.</p></div><span class="legend-minus">−</span></div></div></div>
+          <div class="side-footer"><span>✽</span> A tiny adventure, made for you <span>✽</span></div>
+        </aside>
+      </div>
+      <footer><span>✿ &nbsp; LITTLE SKY GAMES</span><span>TAKE YOUR TIME. ENJOY THE FLIGHT. &nbsp; ☁</span><span>MADE WITH A LITTLE LOVE ♡</span></footer>
+    </main>
+  </div><script src="game.js"></script>
+</body></html>
